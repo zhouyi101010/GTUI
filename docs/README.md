@@ -2,7 +2,7 @@
 home: true
 heroImage: /favicon.png
 actionText: 立即查看 →
-actionLink: /guide/introduction
+actionLink: /guide/colorAndFont
 features:
 - title: 开箱即用
   details: 无需繁杂的配置，即可查看设计规范和基础组件复用。
