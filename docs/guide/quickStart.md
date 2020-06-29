@@ -1,4 +1,4 @@
-## 安装
+## 基础布局
 ::: tip
 **克隆项目**        
 git clone https://github.com/1011cat/shotCat_doc.git
@@ -18,7 +18,7 @@ npm run dev
 浏览器访问 http://localhost:6868
 :::
 
-## 项目结构目录说明
+## 常见页面布局
 
 ```
 |-- shotCat_doc
@@ -65,7 +65,7 @@ npm run dev
                 |-- catButton.vue
 ```
 
-## 快速开始
+## 实例
 ### step1
 将自己的组件库放到根目录上，然后在docs/.vuepress/enhanceApp.js进行配置
 
@@ -202,11 +202,3 @@ title: 2.0 Button 按钮
 ```
 ::: 
 
-至此，你已经完成了一个简单的button组件展示，概括来说就是：
-1. 配置侧边栏导航 
-2. 写示例代码 
-3. 对应的页面md
-
-更详细的配置和说明都在对应代码里。每个代码文件里，都有逐行的注释及防坑说明。
-
-<baseComponent-star></baseComponent-star>

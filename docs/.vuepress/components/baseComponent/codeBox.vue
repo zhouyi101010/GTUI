@@ -95,7 +95,7 @@ export default {
     // display: flex;
     position: relative;
     background: #fafbfc;
-    color: #409eff;
+    color: #406cff;
     font-weight: 400;
     line-height: 40px;
     text-align: center;

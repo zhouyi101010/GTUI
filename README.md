@@ -16,7 +16,7 @@ shotCat_doc能帮你快速构建属于自己的组件库文档，它基于vuepre
  - [我的个人博客地址：shotcat.com](http://www.shotcat.com)
  - [我的掘金账户](https://juejin.im/user/59b7940d5188257e82675bc0)
 
- ## 安装
+ ## 基础布局
 **克隆项目**        
 `git clone https://github.com/1011cat/shotCat_doc.git`
 

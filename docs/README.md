@@ -1,15 +1,15 @@
 ---
 home: true
 heroImage: /favicon.png
-actionText: 快速上手 →
+actionText: 立即查看 →
 actionLink: /guide/introduction
 features:
 - title: 开箱即用
-  details: 无需繁杂的配置，即可进行文档编写。
+  details: 无需繁杂的配置，即可查看设计规范和基础组件复用。
 - title: 功能完善
-  details: 仿照element-ui文档，满足个人及企业对组件库文档的需求。
+  details: 仿照element-ui文档，保持企业内产品体系一致的外观和交互，保持面向用户的熟悉感。
 - title: 轻松上手
-  details: 你甚至都不需要阅读vuepress文档即可快速上手，每个文件，每行代码都有详细的注释说明。
+  details: 面向开发者，降低认知和操作成本，提升工作效率。
 footer: MIT Licensed | Copyright © 2020
 ---
 

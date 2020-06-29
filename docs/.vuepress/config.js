@@ -10,8 +10,8 @@
 // 为了更好的理解，以下所有配置，注释，须配合查看页面实际效果！
 
 module.exports = {
-    title: 'Genertec UI', //标题
-    description: '中国通用技术集团组件文档', //描述
+    title: 'Genertec Design', //标题
+    description: '通用集团信息中心设计规范示例', //描述
     base: '/', //基本url
     // 注入到当前页面的 HTML <head> 中的标签
     head: [
@@ -25,7 +25,7 @@ module.exports = {
       //顶部导航栏配置
       nav: [
           { text: '主页', link: '/' },  // 内部链接 以docs为根目录
-          { text: '使用说明', link: '/guide/introduction' }, 
+          { text: '组件', link: '/guide/introduction' }, 
           {
             text: '文档',
             // 这里是下拉列表展现形式。
@@ -71,26 +71,26 @@ module.exports = {
           ],
           '/guide/':[
             {
-              title:'使用说明',
+              title:'设计规范示例',
               collapsable: false,
               children: [
                 {
-                  title:'简介',
+                  title:'颜色字体',
                   path: 'introduction',
                   collapsable: false, 
                 },
                 {
-                  title:'快速上手',
+                  title:'布局',
                   path: 'quickStart',
                   collapsable: false, 
                 },
                 {
-                  title:'几点说明',
+                  title:'组件',
                   path: 'tips',
                   collapsable: false, 
                 },
                 {
-                  title:'测试说明',
+                  title:'图标',
                   path: 'test',
                   collapsable: false, 
                 }
