@@ -1,16 +1,16 @@
 ### Color 色彩
 
-Element 为了避免视觉传达差异，使用一套特定的调色板来规定颜色，为你所搭建的产品提供一致的外观视觉感受。
+为了避免视觉传达差异，使用一套特定的调色板来规定颜色，为你所搭建的产品提供一致的外观视觉感受。
 
 #### 主色
 
-Element 主要品牌颜色是鲜艳、友好的蓝色。
+主要品牌颜色是通用蓝。
 
 <div class="" style="width: 600px;padding-left: 6px; padding-right: 6px;">
-    <div class="demo-color-box" style="background: rgb(64, 158, 255);">Brand Color
-        <div class="value">#409EFF</div>
+    <div class="demo-color-box" style="background: rgb(64, 108, 255);">Brand Color
+        <div class="value">#406CFF</div>
         <div class="bg-color-sub" style="background: rgb(236, 245, 255);">
-        <div class="bg-blue-sub-item" style="background: rgb(83, 168, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(102, 177, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(121, 187, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(140, 197, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(160, 207, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(179, 216, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(198, 226, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(217, 236, 255);"></div>
+        <div class="bg-blue-sub-item" style="background: rgb(83, 123, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(96, 133, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(114, 147, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(135, 163, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(151, 175, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(173, 192, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(191, 206, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(217, 236, 255);"></div>
         </div>
     </div>
 </div>
@@ -49,9 +49,9 @@ Element 主要品牌颜色是鲜艳、友好的蓝色。
 
 <div class="el-row" style="margin-left: -6px; margin-right: -6px;">
     <div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
-        <div class="demo-color-box" style="background: rgb(103, 194, 58);">Success<div class="value">#67C23A</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(225, 243, 216);"></div><div class="bg-success-sub-item" style="background: rgb(240, 249, 235);"></div></div></div></div><div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
-        <div class="demo-color-box" style="background: rgb(230, 162, 60);">Warning<div class="value">#E6A23C</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(250, 236, 216);"></div><div class="bg-success-sub-item" style="background: rgb(253, 246, 236);"></div></div></div></div><div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
-        <div class="demo-color-box" style="background: rgb(245, 108, 108);">Danger<div class="value">#F56C6C</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(253, 226, 226);"></div><div class="bg-success-sub-item" style="background: rgb(254, 240, 240);"></div></div></div></div><div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
+        <div class="demo-color-box" style="background: rgb(103, 194, 57);">Success<div class="value">#67C239</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(225, 243, 216);"></div><div class="bg-success-sub-item" style="background: rgb(240, 249, 235);"></div></div></div></div><div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
+        <div class="demo-color-box" style="background: rgb(231, 96, 96);">Danger<div class="value">#E76060</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(253, 226, 226);"></div><div class="bg-success-sub-item" style="background: rgb(254, 239, 241);"></div></div></div></div><div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
+        <div class="demo-color-box" style="background: rgb(230, 162, 60);">Warning<div class="value">#E6A23C</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(250, 236, 216);"></div><div class="bg-success-sub-item" style="background: rgb(254, 246, 236);"></div></div></div></div><div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
         <div class="demo-color-box" style="background: rgb(144, 147, 153);">Info<div class="value">#909399</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(233, 233, 235);"></div><div class="bg-success-sub-item" style="background: rgb(244, 244, 245);"></div></div></div>
     </div>
 </div>
@@ -118,5 +118,73 @@ Element 主要品牌颜色是鲜艳、友好的蓝色。
     margin: 10px 0!important;
     border-radius: 4px 4px 4px 4px!important;
     padding: 15px 20px;
+}
+</style>
+### Font 字体
+
+#### 主色
+
+<div class="" style="width: 600px;padding-left: 6px; padding-right: 6px;">
+    <div class="demo-color-box" style="background: rgb(64, 158, 255);">Brand Color
+        <div class="value">#409EFF</div>
+        <div class="bg-color-sub" style="background: rgb(236, 245, 255);">
+        <div class="bg-blue-sub-item" style="background: rgb(83, 168, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(102, 177, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(121, 187, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(140, 197, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(160, 207, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(179, 216, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(198, 226, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(217, 236, 255);"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+.demo-color-box {
+    position: relative;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 5px 0;
+    height: 114px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+}
+.bg-color-sub {
+    width: 100%;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+.bg-blue-sub-item {
+    width: 11.1111111%;
+    height: 100%;
+    display: inline-block;
+}
+.bg-blue-sub-item:first-child {
+    border-radius: 0 0 0 4px;
+}
+</style>
+
+#### 辅助色
+
+除了主色外的场景色，需要在不同的场景中使用（例如危险色表示危险的操作）。
+
+<div class="el-row" style="margin-left: -6px; margin-right: -6px;">
+    <div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
+        <div class="demo-color-box" style="background: rgb(103, 194, 58);">Success<div class="value">#67C23A</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(225, 243, 216);"></div><div class="bg-success-sub-item" style="background: rgb(240, 249, 235);"></div></div></div></div><div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
+        <div class="demo-color-box" style="background: rgb(230, 162, 60);">Warning<div class="value">#E6A23C</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(250, 236, 216);"></div><div class="bg-success-sub-item" style="background: rgb(253, 246, 236);"></div></div></div></div><div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
+        <div class="demo-color-box" style="background: rgb(245, 108, 108);">Danger<div class="value">#F56C6C</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(253, 226, 226);"></div><div class="bg-success-sub-item" style="background: rgb(254, 240, 240);"></div></div></div></div><div class="el-col el-col-6 el-col-xs-12" style="padding-left: 6px; padding-right: 6px;">
+        <div class="demo-color-box" style="background: rgb(144, 147, 153);">Info<div class="value">#909399</div><div class="bg-color-sub"><div class="bg-success-sub-item" style="background: rgb(233, 233, 235);"></div><div class="bg-success-sub-item" style="background: rgb(244, 244, 245);"></div></div></div>
+    </div>
+</div>
+
+<style>
+.bg-success-sub-item {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+.bg-success-sub-item:first-child {
+    border-radius: 0 0 0 4px;
+}
+
+.bg-success-sub-item:last-child {
+    border-radius: 0 0 4px 0;
 }
 </style>

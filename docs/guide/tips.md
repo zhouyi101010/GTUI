@@ -1,21 +1,21 @@
-其实这些说明，我在代码注释里都有详细说明，但还是想单独提出来啰嗦下~
-## 列表
-在编写组件库时，我们一般都会默认配置一些路径alias。但是打包后就会出现找不到对应文件的错误。这个时候就需要在`docs/.vuepress/components/config.js`里进行修改。
-::: tip
-```js
-// 很多时候，我们引入自己的组件库，路径是不对的，
-//这时就需要引入path，并在后面的chainWebpack进行配置
-const path = require('path')
-function resolve (dir) {
-  return path.join(__dirname, '../../', dir)
-}
 
-// vuepress里修改webpack配置，使用的是chainWebpack进行链式调用
-// 具体使用可以参考我这个例子和 https://github.com/neutrinojs/webpack-chain/tree/v5
-chainWebpack: (config, isServer) => {
-  config.resolve.alias
-    .set('@',resolve('src'))
-}
+## 列表
+
+<script>
+  export default {
+    data() {
+      return {
+        //表头为字符串，写法和md一样，中间以`|`间隔就行
+        tableHead: `参数 | 说明 | 类型 | 可选值 | 默认值`,
+        //表格数据为数组，其中每一项为字符串，代表每一行要展示的数据，写法也和md一样，中间以`|`间隔就行
+        tableBody: [
+          `size | 尺寸 | String | medium / small / mini | —`,
+          `type |	类型 | string |	primary / success / warning / danger / info / text | —`
+        ],
+      }
+    },
+  }
+</script>
 ```
 ::: 
 

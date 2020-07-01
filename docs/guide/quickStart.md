@@ -20,127 +20,14 @@ npm run dev
 
 ## 常见页面布局
 
-```
-|-- shotCat_doc
-    |-- LICENSE
-    |-- deploy.sh   //用于自动部署
-    |-- package-lock.json
-    |-- package.json
-    |-- docs
-    |   |-- README.md   //文档首页配置
-    |   |-- .vuepress   //用于存放全局的配置、组件、静态资源等。
-    |   |   |-- config.js   //文档配置文件
-    |   |   |-- enhanceApp.js   //应用级别的配置 其实就是引入文档需要用到的第三方插件
-    |   |   |-- components  //该目录中的 Vue 组件将会被自动注册为全局组件
-    |   |   |   |-- baseComponent   //文档会用到的全局公共组件
-    |   |   |   |   |-- apiTable.vue    //组件的参数表格
-    |   |   |   |   |-- codeBox.vue     //包裹示例的组件
-    |   |   |   |   |-- star.vue    //底部彩蛋组件
-    |   |   |   |-- demo   //组件示例 
-    |   |   |       |-- catButton   //存放button组件相关示例
-    |   |   |           |-- type_catButton.vue
-    |   |   |-- dist    //存放打包后的文件
-    |   |   |   
-    |   |   |-- public  //静态资源目录
-    |   |   |   |-- favicon.jpeg
-    |   |   |   |-- name.png
-    |   |   |-- styles  //用于存放样式相关的文件
-    |   |       |-- index.styl  //将会被自动应用的全局样式文件，会生成在最终的 CSS 文件结尾，具有比默认样式更高的优先级
-    |   |       |-- palette.styl    //用于重写默认颜色常量，或者设置新的 stylus 颜色常量
-    |   |-- components  //存放组件文档要用到的markdown
-    |   |   |-- README.md
-    |   |   |-- 1.0 //1.0 版本的文档 如果不需要版本管理，直接删除1.0这层文件夹即可
-    |   |   |   |-- README.md
-    |   |   |   |-- catButton.md
-    |   |   |-- 2.0 //2.0 版本的文档
-    |   |       |-- README.md
-    |   |       |-- catButton.md
-    |   |-- guide   //使用说明的文件夹
-    |       |-- introduction.md
-    |       |-- quickStart.md
-    |-- src //存放你自己的ui组件库
-        |-- index.js
-        |-- components
-            |-- catButton
-                |-- catButton.vue
-```
-
-## 实例
-### step1
-将自己的组件库放到根目录上，然后在docs/.vuepress/enhanceApp.js进行配置
-
-::: tip
-```js
-//docs/.vuepress/enhanceApp.js
-
-//引入你的组件库 确保你的组件库index文件有install方法
-//如果不会，没关系，src目录里自带一个简单组件库示例，可供参考
-import Cat from '../../src/index'
-
-export default ({
-    Vue, // VuePress 正在使用的 Vue 构造函数
-    options, // 附加到根实例的一些选项
-    router, // 当前应用的路由实例
-    siteData // 站点元数据
-  }) => {
-    Vue.use(Cat)    
-  }
-```
-::: 
-
-然后配置你的侧边栏路径，详细配置可以直接查看docs/.vuepress/components/config.js 内的注释。
-::: tip
-```js
-// docs/.vuepress/components/config.js
-
-//这里配置的是button组件页面的路径
-sidebar:{
-    '/components/2.0/':[
-        {
-            title: '基础组件',   // 必要的 配置侧边栏名称
-            path: '', 
-            collapsable: false, // 可选的, 右侧侧边栏是否展开,默认值是 true
-            // 如果组件很多时，建议将children配置单独放到一个js文件中，然后进行引入
-            children: [
-                {
-                    title:'Button 按钮',
-                    path: 'catButton', //在项目中对应的路径是 docs/components/2.0/catButton.md
-                }]
-        }
-    ]
-},
-
-```
-::: 
-
-### step2 
-现在你已经可以开始编写自己的组件文档了，这里先编写一个组件展示示例：以我的cat-button为例
-
-::: tip
-```html
-// docs/.vuepress/components/demo/catButton/type_catButton.vue
-
-<template>
-    <!-- 注意这段代码会放入slot里，所以必须再包裹一层div，否则会解析报错 -->
-    <div>
-        <cat-button text="default"></cat-button>
-        <cat-button text="primary" type="primary"></cat-button>
-        <cat-button text="success" type="success"></cat-button>
-        <cat-button text="info" type="info"></cat-button>
-        <cat-button text="warning" type="warning"></cat-button>
-        <cat-button text="danger" type="danger"></cat-button>
-        <cat-button text="text" type="text"></cat-button>
+<div class="" style="width: 600px;padding-left: 40px; padding-right: px;">
+    <div class="demo-color-box" style="background: rgb(64, 108, 255);">Brand Color
+        <div class="value">#406CFF</div>
+        <div class="bg-color-sub" style="background: rgb(236, 245, 255);">
+        <div class="bg-blue-sub-item" style="background: rgb(83, 123, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(96, 133, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(114, 147, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(135, 163, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(151, 175, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(173, 192, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(191, 206, 255);"></div><div class="bg-blue-sub-item" style="background: rgb(217, 236, 255);"></div>
+        </div>
     </div>
-</template>
-
-<script>
-    export default {
-    }
-</script>
-
-```
-::: 
-
+</div>
 
 ### step3
 在上面配置好的路径里docs/components/2.0/catButton.md，创建markdown文件。接着就可以愉快地编写button组件页面！
