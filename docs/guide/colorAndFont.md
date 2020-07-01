@@ -120,6 +120,7 @@
     padding: 15px 20px;
 }
 </style>
+
 ### Font 字体
 
 <img src="./images/font.png" class="font">
@@ -131,3 +132,9 @@
     width: 70%;
 }
 </style>
+
+### Font-family代码
+
+```css
+font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+```
